@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var nome = []string{`a`, `b`, `c`, `d`, `e`, `f`, `g`, `h`}
+	var x string
+
+	fmt.Print(`Informe uma letra: `)
+	fmt.Scan(&x)
+
+	letra := []string{}
+	for _, y := range nome {
+		if y != x {
+			letra = append(letra, y)
+		}
+	}
+	fmt.Println(letra)
+}
