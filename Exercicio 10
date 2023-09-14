@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var numeros = []int{12, 32, 42, 43, 22, 55, 21, 65, 87, 65}
+
+	x := 100
+	y := 0
+
+	for _, z := range numeros {
+		if z < x {
+			x = z
+		}
+		if z > y {
+			y = z
+		}
+	}
+	fmt.Println(`Valor mínimo:`, x)
+	fmt.Println(`Valor máximo`, y)
+}
