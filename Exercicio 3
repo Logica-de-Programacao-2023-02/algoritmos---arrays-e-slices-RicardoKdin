@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var numero = [4]float64{1.2, 1.3, 1.4, 1.5}
+	x := 1.0
+
+	for _, y := range numero {
+		x *= y
+	}
+
+	fmt.Print("O produto dos valores é: ", x)
+}
