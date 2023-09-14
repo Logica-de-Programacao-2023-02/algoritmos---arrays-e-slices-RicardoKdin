@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var num = [5]int{1, 3, 5, 7, 9}
+	elem := []int{}
+
+	for _, x := range num {
+		if x%3 == 0 {
+			elem = append(elem, x)
+		}
+	}
+	fmt.Println(`Multiplos de 3: `, elem)
+}
