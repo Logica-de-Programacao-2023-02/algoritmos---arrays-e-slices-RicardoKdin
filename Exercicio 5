@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	linhas := 3
+	colunas := 2
+
+	var numero = make([][]int, linhas)
+	for x := range numero {
+		numero[x] = make([]int, colunas)
+	}
+
+	for x := 0; x < linhas; x++ {
+		for y := 0; y < colunas; y++ {
+			fmt.Print(`Informe os valores para cada elemento: `)
+			fmt.Scan(&numero[x][y])
+		}
+	}
+
+	fmt.Println(`Matriz resultante: `, numero)
+
+}
