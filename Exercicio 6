@@ -1,0 +1,27 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var numeros = [10]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	var x int
+
+	fmt.Print(`Informe um valor: `)
+	fmt.Scan(&x)
+
+	encontrado := false
+	for _, y := range numeros {
+		if y == x {
+			encontrado = true
+			break
+		}
+	}
+
+	if encontrado {
+		fmt.Println(`Encontrou esse valor`)
+	} else {
+		fmt.Println(`Não encontrou esse valor`)
+	}
+
+}
