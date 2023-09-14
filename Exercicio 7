@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var numeros = []int{1, 2, 3, 4, 5}
+	var x int
+
+	fmt.Print(`Informe um valor: `)
+	fmt.Scan(&x)
+
+	y := false
+	for _, z := range numeros {
+		if z == x {
+			y = true
+			break
+		}
+	}
+	if !y {
+		numeros = append(numeros, x)
+	}
+	fmt.Println(numeros)
+}
