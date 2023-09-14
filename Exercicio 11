@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var matriz = [2][3]int{{1, 2, 3}, {4, 5, 6}}
+	var linha int
+	var coluna int
+
+	fmt.Print(`Informe a linha e a coluna: `)
+	fmt.Scan(&linha, &coluna)
+
+	valor := matriz[linha][coluna]
+
+	fmt.Println(`O valor nessa posição é: `, valor)
+
+}
