@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var numeros = [6]float64{0.1, 1.2, 3.4, 5.6, 7.8, 9.0}
+	var x float64
+
+	fmt.Print(`Informe um valor: `)
+	fmt.Scan(&x)
+
+	for y := 0; y < len(numeros); y++ {
+		numeros[y] += x
+	}
+	fmt.Println(numeros)
+
+}
